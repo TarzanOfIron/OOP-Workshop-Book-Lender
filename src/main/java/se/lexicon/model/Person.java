@@ -86,6 +86,7 @@ public class Person {
             borrowedBooksMinus[j++] = borrowedBooks[i];
         }
         borrowedBooks = borrowedBooksMinus;
+        book.setBorrower(null);
     }
 
 }

@@ -82,7 +82,9 @@ public class Book {
     }
 
     public void setBorrower(Person borrower) {
-        this.borrower = borrower;
+        if (available){
+            this.borrower = borrower;
+        }
         setAvailable(borrower == null);
     }
 }

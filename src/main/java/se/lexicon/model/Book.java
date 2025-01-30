@@ -86,5 +86,6 @@ public class Book {
             this.borrower = borrower;
         }
         setAvailable(borrower == null);
+        borrower.loanBook(this);
     }
 }
